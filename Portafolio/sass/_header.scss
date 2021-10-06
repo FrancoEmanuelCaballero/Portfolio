@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    .contenedor {
+        width: 100%;
+        height: 400px;
+        background: url(../img/bg.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .menu {
+            text-align: right;
+            margin-bottom: 20px;
+            padding: 20px;
+            a {
+                font-size: 11px;
+                color: #fff;
+                width: 20px;
+                margin: 20px 10px;
+                padding: 10px;
+                text-decoration: none;
+                &:hover {
+                    border-bottom: 3px solid rgba(#fff, 1);
+                    border-radius: 2px;
+                }
+            }
+        }
+        .logo {
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            margin-top: 70px;
+            padding: 10px;
+            border: 2px solid rgba($color: #fff, $alpha: .4);
+            border-radius: 5px;
+            .nombre {
+                margin-bottom: 10px;
+                font-weight: 300;
+                font-size: 30px;
+                color: #fff;
+            }
+            .profesion {
+                font-size: 15px;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+    }
+}

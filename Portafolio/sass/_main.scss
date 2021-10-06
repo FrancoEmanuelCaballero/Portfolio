@@ -1,0 +1,42 @@
+.main {
+    background: rgb(223, 252, 215);
+    width: 100%;
+    .trabajo {
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 300;
+        font-size: 40px;
+        color: rgb(49, 129, 46);
+    }
+    .contenedor {
+        width: 60%;
+        margin: 0 auto;
+        .trabajos {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            justify-content: center;
+            .fotos {
+                margin: 7px 36px;
+                text-align: center;
+                .detalle {
+                    font-weight: 700;
+                    color: rgb(49, 129, 46);
+                    font-size: 15px;
+                }
+                .tipo {
+                    font-size: 12px;
+                }
+            }
+            img {
+                border: 2px solid rgba(49, 129, 46, .5);
+                border-radius: 5px;
+                &:hover {
+                    border: none;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

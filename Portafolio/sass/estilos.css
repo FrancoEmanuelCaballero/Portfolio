@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .contenedor {
+  width: 100%;
+  height: 400px;
+  background: url(../img/bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+header .contenedor .menu {
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+header .contenedor .menu a {
+  font-size: 11px;
+  color: #fff;
+  width: 20px;
+  margin: 20px 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+header .contenedor .menu a:hover {
+  border-bottom: 3px solid white;
+  border-radius: 2px;
+}
+header .contenedor .logo {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  margin-top: 70px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+header .contenedor .logo .nombre {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+}
+header .contenedor .logo .profesion {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.acerca-de .contenedor {
+  width: 100%;
+  height: 30%;
+}
+.acerca-de .contenedor .imagen {
+  position: relative;
+  top: -60px;
+  display: flex;
+  justify-content: center;
+}
+.acerca-de .contenedor .imagen img {
+  border: 2px solid white;
+  border-radius: 100px;
+}
+.acerca-de .contenedor .presentacion {
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+.acerca-de .contenedor .presentacion .acerca {
+  font-weight: 300;
+  font-size: 27px;
+  color: #31812e;
+  margin-bottom: 5px;
+}
+.acerca-de .contenedor .presentacion .texto {
+  font-size: 15px;
+}
+.acerca-de .contenedor .presentacion .texto span {
+  text-decoration: underline;
+  color: #31812e;
+}
+.acerca-de .contenedor .presentacion .texto span:hover {
+  text-decoration: none;
+}
+
+.main {
+  background: #dffcd7;
+  width: 100%;
+}
+.main .trabajo {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 300;
+  font-size: 40px;
+  color: #31812e;
+}
+.main .contenedor {
+  width: 60%;
+  margin: 0 auto;
+}
+.main .contenedor .trabajos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+.main .contenedor .trabajos .fotos {
+  margin: 7px 36px;
+  text-align: center;
+}
+.main .contenedor .trabajos .fotos .detalle {
+  font-weight: 700;
+  color: #31812e;
+  font-size: 15px;
+}
+.main .contenedor .trabajos .fotos .tipo {
+  font-size: 12px;
+}
+.main .contenedor .trabajos img {
+  border: 2px solid rgba(49, 129, 46, 0.5);
+  border-radius: 5px;
+}
+.main .contenedor .trabajos img:hover {
+  border: none;
+  opacity: 0.7;
+}
+
+.contacto {
+  height: 300px;
+  width: 100%;
+}
+.contacto .titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 40px;
+  color: #31812e;
+}
+.contacto .contenedor .formulario {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacto .contenedor .formulario input[type=text] {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #a4a4a4;
+  width: 48%;
+  margin-bottom: 15px;
+}
+.contacto .contenedor .formulario input[type=text]::placeholder {
+  color: #ccc;
+}
+.contacto .contenedor .formulario input[type=text]:focus {
+  border: 2px solid #31812e;
+  outline: none;
+}
+.contacto .contenedor .formulario input[type=email] {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #a4a4a4;
+  width: 48%;
+  margin-bottom: 15px;
+}
+.contacto .contenedor .formulario input[type=email]::placeholder {
+  color: #ccc;
+}
+.contacto .contenedor .formulario input[type=email]:focus {
+  border: 2px solid #31812e;
+  outline: none;
+}
+.contacto .contenedor .formulario textarea {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #a4a4a4;
+  width: 100%;
+  margin-bottom: 15px;
+  max-width: 100%;
+  max-height: 70px;
+  min-width: 100%;
+  min-height: 70px;
+}
+.contacto .contenedor .formulario textarea::placeholder {
+  color: #ccc;
+}
+.contacto .contenedor .formulario textarea:focus {
+  border: 2px solid #31812e;
+  outline: none;
+}
+.contacto .contenedor .formulario input[type=submit] {
+  margin: 0 auto;
+  height: 40px;
+  width: 70px;
+  border: none;
+  background: #31812e;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fff;
+}
+.contacto .contenedor .formulario input[type=submit]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer {
+  background: #092908;
+  width: 100%;
+  height: 20%;
+}
+footer .footer {
+  font-size: 25px;
+  text-align: center;
+}
+footer .footer .contenedor {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer .contenedor a {
+  color: #092908;
+  display: block;
+  width: 60px;
+  border-radius: 5px;
+}
+footer .footer .contenedor .facebook {
+  background: #092908;
+  color: #fff;
+}
+footer .footer .contenedor .facebook:hover {
+  background: #1877f2;
+  color: #fff;
+}
+footer .footer .contenedor .twitter {
+  background: #092908;
+  color: #fff;
+}
+footer .footer .contenedor .twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+footer .footer .contenedor .instagram {
+  background: #092908;
+  color: #fff;
+}
+footer .footer .contenedor .instagram:hover {
+  background: #5851db;
+  color: #fff;
+}
+footer .footer .contenedor .youtube {
+  background: #092908;
+  color: #fff;
+}
+footer .footer .contenedor .youtube:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  footer .footer .contenedor {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 800px) and (max-width: 600px) {
+  header .contenedor .menu {
+    text-align: center;
+  }
+
+  .main .contenedor {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

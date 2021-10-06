@@ -1,0 +1,86 @@
+.contacto {
+    height: 300px;
+    width: 100%;
+    .titulo {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 40px;
+        color: rgb(49, 129, 46);
+    }
+    .contenedor {
+        .formulario {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input[type="text"] {
+                border: 1px solid #cecece;
+                border-radius: 5px;
+                padding: 15px 20px;
+                font-size: 14px;
+                color: #a4a4a4;
+                width: 48%;
+                margin-bottom: 15px;
+                &::placeholder {
+                    color: #ccc;
+                }
+                &:focus {
+                    border: 2px solid rgb(49, 129, 46);
+                    outline: none;
+                }
+            }
+            input[type="email"] {
+                border: 1px solid #cecece;
+                border-radius: 5px;
+                padding: 15px 20px;
+                font-size: 14px;
+                color: #a4a4a4;
+                width: 48%;
+                margin-bottom: 15px;
+                &::placeholder {
+                    color: #ccc;
+                }
+                &:focus {
+                    border: 2px solid rgb(49, 129, 46);
+                    outline: none;
+                }
+            }
+            textarea {
+                border: 1px solid #cecece;
+                border-radius: 5px;
+                padding: 15px 20px;
+                font-size: 15px;
+                color: #a4a4a4;
+                width: 100%;
+                margin-bottom: 15px;
+                max-width: 100%;
+                max-height: 70px;
+                min-width: 100%;
+                min-height: 70px;
+                &::placeholder {
+                    color: #ccc;
+                }
+                &:focus {
+                    border: 2px solid rgb(49, 129, 46);
+                    outline: none;
+                }
+            }
+            input[type="submit"] {
+                margin: 0 auto;
+                height: 40px;
+                width: 70px;
+                border: none;
+                background: rgb(49, 129, 46);
+                border-radius: 4px;
+                font-weight: 500;
+                color: #fff;
+                &:hover {
+                    opacity: .7;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+        @media screen and (max-width: 800px) {
+            footer {
+                .footer {
+                    .contenedor {
+                        width: 50%;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                    }
+                }
+            }
+            @media screen and (max-width:600px) {
+                header {
+                    .contenedor {
+                        .menu {
+                            text-align: center;
+                        }
+                    }
+                }
+                .main {
+                    .contenedor {
+                        width: 100%;
+                    }
+                }
+            }
+        }
